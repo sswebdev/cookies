@@ -3,5 +3,6 @@ class GreetingsController < ApplicationController
   end
 
   def introduce
+    redirect_to '/hi'
   end
 end
