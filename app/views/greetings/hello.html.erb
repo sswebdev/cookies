@@ -1,5 +1,11 @@
 <h1>Hello <%= @name %>!</h1>
 
 <%= form_tag "/mynameis" do %>
+  <%= label_tag :person, "Your name:" %>
   <%= text_field_tag :person %>
+
+  <%= label_tag :favorite_color, "Your favorite color:" %>
+  <%= text_field_tag :favorite_color %>
+
+  <%= submit_tag "Introduce Yourself" %>
 <% end %>
