@@ -1,2 +1,5 @@
-<h1>Greetings#hello</h1>
-<p>Find me in app/views/greetings/hello.html.erb</p>
+<h1>Hello <%= @name %>!</h1>
+
+<%= form_tag "/mynameis" do %>
+  <%= text_field_tag :person %>
+<% end %>
